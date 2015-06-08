@@ -24,7 +24,8 @@
         android:layout_below="@+id/title_text_view"
         android:layout_centerHorizontal="true"
         android:background="#F08C35"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:onClick="onButtonClick"/>
 
     <Button
         android:layout_width="@dimen/button_width"
@@ -34,7 +35,8 @@
         android:layout_below="@+id/streamer_button"
         android:layout_centerHorizontal="true"
         android:background="#F08C35"
-        android:layout_marginTop="@dimen/button_margin"/>
+        android:layout_marginTop="@dimen/button_margin"
+        android:onClick="onButtonClick"/>
 
     <Button
         android:layout_width="@dimen/button_width"
@@ -44,7 +46,8 @@
         android:layout_below="@+id/scores_button"
         android:layout_centerHorizontal="true"
         android:background="#F08C35"
-        android:layout_marginTop="@dimen/button_margin"/>
+        android:layout_marginTop="@dimen/button_margin"
+        android:onClick="onButtonClick"/>
 
     <Button
         android:layout_width="@dimen/button_width"
@@ -54,7 +57,8 @@
         android:layout_below="@+id/library_button"
         android:layout_centerHorizontal="true"
         android:background="#F08C35"
-        android:layout_marginTop="@dimen/button_margin"/>
+        android:layout_marginTop="@dimen/button_margin"
+        android:onClick="onButtonClick"/>
 
     <Button
         android:layout_width="@dimen/button_width"
@@ -64,7 +68,8 @@
         android:layout_below="@+id/bigger_button"
         android:layout_centerHorizontal="true"
         android:background="#F08C35"
-        android:layout_marginTop="@dimen/button_margin"/>
+        android:layout_marginTop="@dimen/button_margin"
+        android:onClick="onButtonClick"/>
 
     <Button
         android:layout_width="@dimen/button_width"
@@ -73,7 +78,8 @@
         android:id="@+id/capstone_button"
         android:layout_below="@+id/xyz_button"
         android:layout_centerHorizontal="true"
-        android:background="#F08C35"
-        android:layout_marginTop="@dimen/button_margin"/>
+        android:background="#03A9F4"
+        android:layout_marginTop="@dimen/button_margin"
+        android:onClick="onButtonClick"/>
 
 </RelativeLayout>

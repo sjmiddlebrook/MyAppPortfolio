@@ -1,12 +1,14 @@
 package com.jackmiddlebrook.appportfolio;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +36,33 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onButtonClick(View view) {
+        switch (view.getId()) {
+            case R.id.streamer_button:
+                showToast("Spotify Streamer");
+                break;
+            case R.id.scores_button:
+                showToast("Scores");
+                break;
+            case R.id.library_button:
+                showToast("Library");
+                break;
+            case R.id.bigger_button:
+                showToast("Build it Bigger");
+                break;
+            case R.id.xyz_button:
+                showToast("XYZ Reader");
+                break;
+            case R.id.capstone_button:
+                showToast("Capstone Project");
+                break;
+        }
+    }
+
+    private void showToast(String appName) {
+        Toast.makeText(getApplicationContext(), "This button will launch my " + appName + " app",
+                Toast.LENGTH_SHORT).show();
     }
 }
