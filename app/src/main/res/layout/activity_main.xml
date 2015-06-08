@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:text="@string/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/streamer_text"
+        android:id="@+id/streamer_button"
+        android:layout_below="@+id/title_text_view"
+        android:layout_centerHorizontal="true"
+        android:background="#F08C35"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/scores_text"
+        android:id="@+id/scores_button"
+        android:layout_below="@+id/streamer_button"
+        android:layout_centerHorizontal="true"
+        android:background="#F08C35"
+        android:layout_marginTop="@dimen/button_margin"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/library_text"
+        android:id="@+id/library_button"
+        android:layout_below="@+id/scores_button"
+        android:layout_centerHorizontal="true"
+        android:background="#F08C35"
+        android:layout_marginTop="@dimen/button_margin"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/bigger_text"
+        android:id="@+id/bigger_button"
+        android:layout_below="@+id/library_button"
+        android:layout_centerHorizontal="true"
+        android:background="#F08C35"
+        android:layout_marginTop="@dimen/button_margin"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/xyz_text"
+        android:id="@+id/xyz_button"
+        android:layout_below="@+id/bigger_button"
+        android:layout_centerHorizontal="true"
+        android:background="#F08C35"
+        android:layout_marginTop="@dimen/button_margin"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="@string/capstone_text"
+        android:id="@+id/capstone_button"
+        android:layout_below="@+id/xyz_button"
+        android:layout_centerHorizontal="true"
+        android:background="#F08C35"
+        android:layout_marginTop="@dimen/button_margin"/>
+
+</RelativeLayout>
