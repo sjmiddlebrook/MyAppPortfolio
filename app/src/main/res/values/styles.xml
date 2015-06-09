@@ -5,4 +5,12 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="ButtonStyle" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/udacity_orange</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+
 </resources>
