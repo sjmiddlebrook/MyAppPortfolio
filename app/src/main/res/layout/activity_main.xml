@@ -1,66 +1,73 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context=".MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/title_text_view"
-        android:text="@string/title_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textSize="24sp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    tools:context=".MainActivity">
 
-    <Button
-        style="@style/ButtonStyle"
-        android:text="@string/streamer_text"
-        android:id="@+id/streamer_button"
-        android:layout_below="@+id/title_text_view"
-        android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title_text"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
 
-    <Button
-        style="@style/ButtonStyle"
-        android:text="@string/scores_text"
-        android:id="@+id/scores_button"
-        android:layout_below="@+id/streamer_button"
-        android:layout_marginTop="@dimen/button_margin"/>
+        <Button
+            android:id="@+id/streamer_button"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/title_text_view"
+            android:layout_marginTop="16dp"
+            android:text="@string/streamer_text"/>
 
-    <Button
-        style="@style/ButtonStyle"
-        android:text="@string/library_text"
-        android:id="@+id/library_button"
-        android:layout_below="@+id/scores_button"
-        android:layout_marginTop="@dimen/button_margin"/>
+        <Button
+            android:id="@+id/scores_button"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/streamer_button"
+            android:layout_marginTop="@dimen/button_margin"
+            android:text="@string/scores_text"/>
 
-    <Button
-        style="@style/ButtonStyle"
-        android:text="@string/bigger_text"
-        android:id="@+id/bigger_button"
-        android:layout_below="@+id/library_button"
-        android:layout_marginTop="@dimen/button_margin"/>
+        <Button
+            android:id="@+id/library_button"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/scores_button"
+            android:layout_marginTop="@dimen/button_margin"
+            android:text="@string/library_text"/>
 
-    <Button
-        style="@style/ButtonStyle"
-        android:text="@string/xyz_text"
-        android:id="@+id/xyz_button"
-        android:layout_below="@+id/bigger_button"
-        android:layout_marginTop="@dimen/button_margin"/>
+        <Button
+            android:id="@+id/bigger_button"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/library_button"
+            android:layout_marginTop="@dimen/button_margin"
+            android:text="@string/bigger_text"/>
 
-    <Button
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:text="@string/capstone_text"
-        android:id="@+id/capstone_button"
-        android:layout_below="@+id/xyz_button"
-        android:layout_centerHorizontal="true"
-        android:background="@color/capstone_color"
-        android:layout_marginTop="@dimen/button_margin"
-        android:onClick="onButtonClick"/>
+        <Button
+            android:id="@+id/xyz_button"
+            style="@style/ButtonStyle"
+            android:layout_below="@+id/bigger_button"
+            android:layout_marginTop="@dimen/button_margin"
+            android:text="@string/xyz_text"/>
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/capstone_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xyz_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/button_margin"
+            android:background="@color/capstone_color"
+            android:onClick="onButtonClick"
+            android:text="@string/capstone_text"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
